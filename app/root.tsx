@@ -23,13 +23,23 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
+import { registerLicense } from "@syncfusion/ej2-base";
+
+registerLicense(import.meta.env.VITE_SYNCFUSION_LICENSE_KEY);
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Meta />
+        <title>Travel Agency</title>
+        <link
+          rel="icon"
+          href="/public\assets\icons\logo.svg"
+          type="image/x-icon"
+        />
+        <meta name="description" content="Travel Agency" />
         <Links />
       </head>
       <body>
