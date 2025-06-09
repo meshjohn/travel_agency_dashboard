@@ -6,7 +6,6 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-
 import type { Route } from "./+types/root";
 import "./app.css";
 
@@ -36,7 +35,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <title>Travel Agency</title>
         <link
           rel="icon"
-          href="/public\assets\icons\logo.svg"
+          href="\assets\icons\logo.svg"
           type="image/x-icon"
         />
         <meta name="description" content="Travel Agency" />
