@@ -1,27 +1,18 @@
+import { ColumnsDirective } from "@syncfusion/ej2-react-charts";
+import { ColumnDirective, GridComponent } from "@syncfusion/ej2-react-grids";
 import { Header } from "components";
-import {
-  ColumnDirective,
-  ColumnsDirective,
-  GridComponent,
-} from "@syncfusion/ej2-react-grids";
 import { cn, formatDate } from "lib/utils";
-import { getAllUsers } from "~/appwrite/auth";
-import type { Route } from "./+types/allUsers";
 
-export const loader = async () => {
-  const { users, total } = await getAllUsers(10, 0);
-  return { users, total };
-};
-
-const allUsers = ({ loaderData }: Route.ComponentProps) => {
-  const { users } = loaderData;
+const Trips = () => {
   return (
     <main className="all-users wrapper">
       <Header
-        title="Manage Users"
-        description="Filter, sort and access detailed user profiles"
+        title="Trips"
+        description="View and edit AI-generated travel plans"
+        ctaText="Create a trip"
+        ctaUrl="/trips/create"
       />
-      <GridComponent dataSource={users} gridLines="None">
+      <GridComponent gridLines="None">
         <ColumnsDirective>
           <ColumnDirective
             field="name"
@@ -90,4 +81,4 @@ const allUsers = ({ loaderData }: Route.ComponentProps) => {
   );
 };
 
-export default allUsers;
+export default Trips;
