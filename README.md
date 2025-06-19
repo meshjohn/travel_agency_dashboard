@@ -31,18 +31,10 @@ The **TourVisto Admin Dashboard** is a responsive admin panel built with **React
 
 ---
 
-## 📸 Screenshots
-
-| Dashboard | Manage Users | Trip Analytics |
-|-----------|--------------|----------------|
-| ![Dashboard](./screenshots/dashboard.png) | ![Users](./screenshots/users.png) | ![Charts](./screenshots/charts.png) |
-
----
-
 ## ⚙️ Getting Started
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/tourvisto-admin-dashboard.git
+git clone https://github.com/meshjohn/travel_agency_dashboard.git
 cd tourvisto-admin-dashboard
